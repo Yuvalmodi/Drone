@@ -20,7 +20,7 @@ To ensure flight stability is never compromised by input/output latency, this sy
    │  Secondary Safety Tasks  │                    │   Flight-Critical Tasks  │
    └────────────┬─────────────┘                    └────────────┬─────────────┘
                 │                                               │
-                ├► LiDAR Data Ingestion (UART2)                 ├► MPU6050 6-Axis IMU Reading
+                ├► LiDAR Data Ingestion (I2C)                 ├► MPU6050 6-Axis IMU Reading
                 ├► Proximity Logic Calculation                  ├► Angle / Attenuation Drift
                 └► Safety Brake Override Flag                   ├► Active PID Calculations
                                                                 └► 400Hz Motor Mixing Out
